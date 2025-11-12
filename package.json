@@ -8,6 +8,8 @@
     "lint": "eslint src/",
     "format": "prettier --write src/"
   },
+  "author": "MamBoota",
+  "license": "ISC",
   "dependencies": {
     "@tanstack/react-query": "^5.0.0",
     "@testing-library/user-event": "^14.6.1",
