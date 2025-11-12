@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация / Authorization</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Основной контейнер авторизации -->
+    <div class="auth-container">
+        <!-- Sign In 1 step - Форма входа -->
+        <div class="sign-in-step" id="step1">
+            <div class="sign-in-wrapper">
+                <div class="sign-in-card">
+                    <!-- Logo and Title -->
+                    <div class="logo-title">
+                        <div class="logo-placeholder">
+                            <div class="_logo-placeholder">
+                                <div class="logo-symbol">
+                                    <div class="symbol-bg"></div>
+                                    <div class="ellipse-1"></div>
+                                    <div class="ellipse-2"></div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <div class="company-text">Company</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-text">Sign in to your account to continue</div>
+                    </div>
+
+                    <!-- React Form Container -->
+                    <div id="react-login-form"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign In 2 step - Two-Factor Authentication -->
+        <div class="sign-in-step" id="step2" style="display: none;">
+            <div class="sign-in-wrapper">
+                <div class="sign-in-card">
+                    <!-- Back Button (будет управляться React) -->
+                    <div id="react-back-button"></div>
+
+                    <!-- Logo and Title -->
+                    <div class="logo-title">
+                        <div class="logo-placeholder">
+                            <div class="_logo-placeholder">
+                                <div class="logo-symbol">
+                                    <div class="symbol-bg"></div>
+                                    <div class="ellipse-1"></div>
+                                    <div class="ellipse-2"></div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <div class="company-text">Company</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-text">Two-Factor Authentication</div>
+                        <div class="subtitle-text">Enter the 6-digit code from the Google Authenticator app</div>
+                    </div>
+
+                    <!-- React 2FA Form Container -->
+                    <div id="react-2fa-form"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container для React -->
+    <div id="react-toast-container"></div>
+</body>
+</html>

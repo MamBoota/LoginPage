@@ -1,0 +1,641 @@
+.abeezee-regular {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .abeezee-regular-italic {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }  
+
+/* Reset и базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ABeeZee', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background: #F5F5F5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+/* Основной контейнер авторизации */
+.auth-container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    min-height: 1080px;
+    background: rgba(68, 68, 68, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sign In Step */
+.sign-in-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+    max-width: 1920px;
+    height: 1080px;
+    background: #F5F5F5;
+}
+
+.sign-in-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    max-width: 1872px;
+    height: 1032px;
+    background: #F5F5F5;
+    flex: 1;
+}
+
+/* Sign In Card */
+.sign-in-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+    width: 440px;
+    min-height: 437px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    position: relative;
+}
+
+/* Logo and Title */
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 4px;
+    width: 376px;
+    min-height: 132px;
+}
+
+/* Logo Placeholder */
+.logo-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 10px;
+    width: 376px;
+    height: 64px;
+}
+
+._logo-placeholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 9px;
+    width: 98.24px;
+    height: 24px;
+}
+
+.logo-symbol {
+    width: 24px;
+    height: 24px;
+    background: #1677FF;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.symbol-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1677FF;
+    border-radius: 50%;
+}
+
+.ellipse-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+
+.ellipse-2 {
+    position: absolute;
+    left: 6.11%;
+    top: 25%;
+    background: #FFFFFF;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+}
+
+.text-wrapper {
+    width: 65.24px;
+    height: 24px;
+    position: relative;
+}
+
+.company-text {
+    width: 65.24px;
+    height: 12.77px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12.77px;
+    color: rgba(0, 0, 0, 0.88);
+    display: flex;
+    align-items: center;
+}
+
+/* Title Text */
+.title-text {
+    width: 376px;
+    min-height: 64px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.subtitle-text {
+    width: 376px;
+    min-height: 48px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.88);
+    margin-top: 4px;
+}
+
+/* Login Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 32px; /* Еще больше расстояние */
+    width: 376px;
+    min-height: 217px;
+}
+
+/* Затычка видимо ХЗ */
+.form-farme{
+    width: 21px;
+    height: 49px;
+}
+
+/* Form Input */
+.form-input {
+    width: 376px;
+    height: 40px;
+}
+
+.form-item {
+    width: 376px;
+    height: 40px;
+}
+
+/* Input Wrapper */
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 11px;
+    gap: 10px;
+    width: 376px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.input-wrapper:focus-within {
+    border: 1px solid #1677FF;
+    box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+
+.input-icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+/* Input Field */
+.input-field {
+    box-sizing: border-box;
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.88);
+    outline: none;
+    padding: 0;
+}
+
+.input-field::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.password-input {
+    padding: 0 12px;
+}
+
+.input-wrapper .password-input {
+    border: none;
+}
+
+.form-item .input-wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+/* Code Inputs (6-digit) */
+.code-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 12px;
+    width: 376px;
+    height: 60px;
+}
+
+.code-input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 11px;
+    gap: 10px;
+    width: 52.67px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.88);
+    outline: none;
+    transition: all 0.3s;
+    flex: 1;
+}
+
+.code-input:focus {
+    border: 1px solid #1677FF;
+    box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+
+.code-input.error {
+    border: 1px solid #FF4D4F;
+}
+
+/* Input Caption / Error Message */
+.input-caption {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px 0 0;
+    width: 376px;
+    height: 24px;
+}
+
+.error-message {
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FF4D4F;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 122px;
+    width: 376px;
+    height: 32px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    width: 120px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.checkbox-input {
+    width: 16px;
+    height: 16px;
+    background: #1677FF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    width: 96px;
+    height: 22px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.forgot-link {
+    width: 143px;
+    height: 32px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1677FF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 6px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button - базовый стиль (серый, неактивный) */
+.submit-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    gap: 8px;
+    width: 376px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    transition: all 0.3s;
+}
+
+/* Disabled кнопка (серый стиль) */
+.submit-button.disabled {
+    background: rgba(0, 0, 0, 0.04) !important;
+    color: rgba(0, 0, 0, 0.25) !important;
+    cursor: not-allowed !important;
+    border: 1px solid #D9D9D9 !important;
+}
+
+.submit-button.disabled:hover {
+    background: rgba(0, 0, 0, 0.04) !important;
+    color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Active кнопка (синий стиль) - перебивает базовый стиль */
+.submit-button.primary-button {
+    background: #1677FF !important;
+    box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+    border: none !important;
+    color: #FFFFFF !important;
+    cursor: pointer !important;
+}
+
+.submit-button.primary-button:hover {
+    background: #1890FF !important;
+    color: #FFFFFF !important;
+}
+
+.submit-button.primary-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 rgba(5, 145, 255, 0.1);
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    width: 40px;
+    height: 32px;
+    left: 32px;
+    top: 32px;
+    border-radius: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    z-index: 2;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .auth-container {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .sign-in-step {
+        height: auto;
+        padding: 20px;
+    }
+
+    .sign-in-wrapper {
+        height: auto;
+    }
+
+    .sign-in-card {
+        width: 100%;
+        max-width: 440px;
+        padding: 24px;
+    }
+
+    .logo-title,
+    .login-form,
+    .form-input,
+    .form-item,
+    .input-wrapper,
+    .input-field,
+    .code-inputs,
+    .submit-button {
+        width: 100%;
+    }
+
+    .code-input {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .sign-in-card {
+        padding: 20px;
+    }
+
+    .title-text {
+        font-family: 'ABeeZee';
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .subtitle-text {
+        font-family: 'ABeeZee';
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/* Спиннер загрузки */
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.spinner-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #1677ff;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.spinner-dot:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.spinner-dot:nth-child(3) {
+    animation-delay: -0.6s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.7);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Стили для полей с ошибкой */
+.input-field.error {
+    border-color: #ff4d4f;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+/* Сообщение об ошибке */
+.error-message {
+    color: #ff4d4f;
+    font-family: 'ABeeZee';
+    font-size: 12px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.network-error {
+    color: #d93636;
+    font-family: 'ABeeZee';
+    font-size: 12px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ... existing styles ... */
+
+/* Стили для полей с ошибкой */
+.input-wrapper.error {
+    border-color: #ff4d4f !important;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2) !important;
+}
+  
+  .code-input.error {
+    border-color: #ff4d4f !important;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2) !important;
+}
